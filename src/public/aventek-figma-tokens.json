@@ -1,0 +1,988 @@
+{
+  "meta": {
+    "project": "Aventek Corporate Website — Design System & Components",
+    "description": "Figma-import JSON with design tokens, core components, and text layers for the Aventek technology company website. Import via a Figma JSON-to-components plugin or use as a token + content source for creating components.",
+    "version": "1.0",
+    "author": "Aventek Design Team",
+    "lastUpdated": "2026-03-16"
+  },
+  "tokens": {
+    "colors": {
+      "primary": "#1E3A8A",
+      "primary-light": "#3B82F6",
+      "primary-dark": "#1E40AF",
+      "secondary": "#60A5FA",
+      "accent-blue": "#0EA5E9",
+      "accent-light-blue": "#38BDF8",
+      "neutral-900": "#0F172A",
+      "neutral-800": "#1E293B",
+      "neutral-700": "#334155",
+      "neutral-600": "#475569",
+      "neutral-500": "#64748B",
+      "neutral-400": "#94A3B8",
+      "neutral-300": "#CBD5E1",
+      "neutral-200": "#E2E8F0",
+      "neutral-100": "#F1F5F9",
+      "neutral-50": "#F8FAFC",
+      "white": "#FFFFFF",
+      "success": "#10B981",
+      "warning": "#F59E0B",
+      "danger": "#EF4444",
+      "info": "#3B82F6"
+    },
+    "typography": {
+      "display-xl-72": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 700,
+        "fontSize": 72,
+        "lineHeight": 80,
+        "letterSpacing": -1.5
+      },
+      "display-lg-56": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 700,
+        "fontSize": 56,
+        "lineHeight": 64,
+        "letterSpacing": -1
+      },
+      "h1-48": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 700,
+        "fontSize": 48,
+        "lineHeight": 56,
+        "letterSpacing": -0.5
+      },
+      "h2-36": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 700,
+        "fontSize": 36,
+        "lineHeight": 44
+      },
+      "h3-28": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 600,
+        "fontSize": 28,
+        "lineHeight": 36
+      },
+      "h4-24": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 600,
+        "fontSize": 24,
+        "lineHeight": 32
+      },
+      "h5-20": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 600,
+        "fontSize": 20,
+        "lineHeight": 28
+      },
+      "body-lg-20": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 400,
+        "fontSize": 20,
+        "lineHeight": 30
+      },
+      "body-18": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 400,
+        "fontSize": 18,
+        "lineHeight": 28
+      },
+      "body-16": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 400,
+        "fontSize": 16,
+        "lineHeight": 24
+      },
+      "body-14": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 400,
+        "fontSize": 14,
+        "lineHeight": 20
+      },
+      "caption-12": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 400,
+        "fontSize": 12,
+        "lineHeight": 16
+      },
+      "overline-10": {
+        "fontFamily": "Inter, system-ui, sans-serif",
+        "fontWeight": 600,
+        "fontSize": 10,
+        "lineHeight": 14,
+        "letterSpacing": 1,
+        "textTransform": "uppercase"
+      }
+    },
+    "spacing": {
+      "xs": 4,
+      "sm": 8,
+      "md": 16,
+      "lg": 24,
+      "xl": 32,
+      "2xl": 40,
+      "3xl": 48,
+      "4xl": 64,
+      "5xl": 80,
+      "6xl": 96
+    },
+    "radius": {
+      "sm": 4,
+      "md": 8,
+      "lg": 12,
+      "xl": 16,
+      "2xl": 24,
+      "full": 9999
+    },
+    "shadows": {
+      "sm": "0 1px 2px 0 rgba(0, 0, 0, 0.05)",
+      "md": "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
+      "lg": "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
+      "xl": "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
+      "2xl": "0 25px 50px -12px rgba(0, 0, 0, 0.25)"
+    }
+  },
+  "components": [
+    {
+      "id": "cmp-header-nav-01",
+      "name": "Header / Navigation (Desktop + Mobile)",
+      "type": "header",
+      "styles": {
+        "background": "#FFFFFF",
+        "height": 80,
+        "padding": {
+          "left": 24,
+          "right": 24
+        },
+        "boxShadow": "0 1px 3px 0 rgba(0, 0, 0, 0.1)"
+      },
+      "layers": [
+        {
+          "type": "logo",
+          "content": "AVENTEK",
+          "style": "h4-24",
+          "color": "primary",
+          "fontWeight": 700
+        },
+        {
+          "type": "nav",
+          "items": [
+            "Home",
+            "About",
+            "Solutions & Products",
+            "Industries",
+            "Innovation & R&D",
+            "Insights",
+            "Contact & Careers"
+          ],
+          "style": "body-16",
+          "color": "neutral-700"
+        },
+        {
+          "type": "cta",
+          "label": "Get Started",
+          "style": "body-16",
+          "bgColor": "primary",
+          "textColor": "white",
+          "radius": "md"
+        }
+      ],
+      "notes": "Sticky header with hamburger menu for mobile; includes dropdown menus for Solutions and Industries"
+    },
+    {
+      "id": "cmp-hero-slider-01",
+      "name": "Hero Slider — Homepage",
+      "type": "hero-slider",
+      "styles": {
+        "height": 600,
+        "bgColor": "neutral-900",
+        "padding": {
+          "top": 80,
+          "bottom": 80
+        }
+      },
+      "slides": [
+        {
+          "id": "slide-auto-people-counting",
+          "title": "Auto People Counting",
+          "subtitle": "AI-Powered Analytics Platform",
+          "description": "India's First AI-Powered People Counting Platform - Experience revolutionary crowd analytics and intelligent space utilization",
+          "ctaPrimary": "Explore Solution",
+          "ctaSecondary": "View Demo",
+          "image": "auto-people-counting-hero.jpg"
+        },
+        {
+          "id": "slide-pumpguru",
+          "title": "PumpGuru",
+          "subtitle": "Intelligent Water Distribution",
+          "description": "Smart water management solutions for efficient distribution and conservation across residential and commercial properties",
+          "ctaPrimary": "Discover More",
+          "ctaSecondary": "See Features",
+          "image": "pumpguru-hero.jpg"
+        },
+        {
+          "id": "slide-security",
+          "title": "Security & Smart Systems",
+          "subtitle": "IoT & AI Solutions",
+          "description": "Comprehensive smart security solutions powered by cutting-edge IoT and artificial intelligence technology",
+          "ctaPrimary": "Learn More",
+          "ctaSecondary": "Contact Us",
+          "image": "security-systems-hero.jpg"
+        }
+      ],
+      "notes": "Auto-rotating carousel with 4-second intervals; includes navigation dots and arrows"
+    },
+    {
+      "id": "cmp-stats-section-01",
+      "name": "Stats Section — Trusted Excellence",
+      "type": "stats",
+      "styles": {
+        "bgColor": "white",
+        "padding": {
+          "top": 64,
+          "bottom": 64
+        }
+      },
+      "stats": [
+        {
+          "value": "30+",
+          "label": "Years of Excellence",
+          "icon": "award"
+        },
+        {
+          "value": "100+",
+          "label": "OEM Partners",
+          "icon": "building"
+        },
+        {
+          "value": "10+",
+          "label": "Industries Served",
+          "icon": "factory"
+        },
+        {
+          "value": "1000+",
+          "label": "Projects Completed",
+          "icon": "trending-up"
+        }
+      ]
+    },
+    {
+      "id": "cmp-solution-card-01",
+      "name": "Solution Card",
+      "type": "card",
+      "styles": {
+        "bgColor": "white",
+        "padding": {
+          "all": 24
+        },
+        "radius": "xl",
+        "elevation": "md"
+      },
+      "layers": [
+        {
+          "type": "icon",
+          "size": 48,
+          "color": "primary-light"
+        },
+        {
+          "type": "title",
+          "content": "Solution Title",
+          "style": "h4-24",
+          "color": "neutral-900"
+        },
+        {
+          "type": "description",
+          "content": "Brief description of the solution and its key benefits",
+          "style": "body-16",
+          "color": "neutral-600"
+        },
+        {
+          "type": "features",
+          "items": [
+            "Feature 1",
+            "Feature 2",
+            "Feature 3"
+          ],
+          "style": "body-14",
+          "color": "neutral-700"
+        },
+        {
+          "type": "cta",
+          "label": "Learn More",
+          "style": "body-16",
+          "variant": "outline"
+        }
+      ]
+    },
+    {
+      "id": "cmp-product-showcase-01",
+      "name": "Product Showcase — Large Image + Details",
+      "type": "product-showcase",
+      "styles": {
+        "layout": "grid-2-columns",
+        "padding": {
+          "all": 48
+        },
+        "bgColor": "neutral-50"
+      },
+      "layers": [
+        {
+          "type": "image",
+          "position": "left",
+          "width": "50%",
+          "aspectRatio": "4:3"
+        },
+        {
+          "type": "content",
+          "position": "right",
+          "width": "50%",
+          "children": [
+            {
+              "type": "badge",
+              "content": "Featured Product",
+              "style": "body-14",
+              "bgColor": "primary",
+              "textColor": "white"
+            },
+            {
+              "type": "title",
+              "content": "Product Name",
+              "style": "h2-36",
+              "color": "neutral-900"
+            },
+            {
+              "type": "subtitle",
+              "content": "Product tagline or key benefit",
+              "style": "body-lg-20",
+              "color": "primary"
+            },
+            {
+              "type": "description",
+              "content": "Detailed product description highlighting key features and benefits",
+              "style": "body-16",
+              "color": "neutral-700"
+            },
+            {
+              "type": "features-list",
+              "items": [
+                "Key feature 1",
+                "Key feature 2",
+                "Key feature 3",
+                "Key feature 4"
+              ]
+            },
+            {
+              "type": "cta-group",
+              "buttons": [
+                {
+                  "label": "View Details",
+                  "variant": "primary"
+                },
+                {
+                  "label": "Request Demo",
+                  "variant": "outline"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmp-team-member-card-01",
+      "name": "Team Member Card",
+      "type": "team-card",
+      "styles": {
+        "bgColor": "white",
+        "padding": {
+          "all": 24
+        },
+        "radius": "lg",
+        "elevation": "md"
+      },
+      "layers": [
+        {
+          "type": "avatar",
+          "size": 120,
+          "shape": "circle"
+        },
+        {
+          "type": "name",
+          "content": "Full Name",
+          "style": "h5-20",
+          "color": "neutral-900"
+        },
+        {
+          "type": "title",
+          "content": "Job Title",
+          "style": "body-16",
+          "color": "primary"
+        },
+        {
+          "type": "bio",
+          "content": "Brief bio or description of role and expertise",
+          "style": "body-14",
+          "color": "neutral-600"
+        }
+      ]
+    },
+    {
+      "id": "cmp-blog-card-01",
+      "name": "Blog Post Card",
+      "type": "blog-card",
+      "styles": {
+        "bgColor": "white",
+        "radius": "xl",
+        "elevation": "md",
+        "overflow": "hidden"
+      },
+      "layers": [
+        {
+          "type": "featured-image",
+          "height": 192,
+          "aspectRatio": "16:9"
+        },
+        {
+          "type": "content",
+          "padding": {
+            "all": 20
+          },
+          "children": [
+            {
+              "type": "meta",
+              "items": [
+                {
+                  "type": "category-badge",
+                  "content": "Category",
+                  "style": "caption-12"
+                },
+                {
+                  "type": "read-time",
+                  "content": "X min read",
+                  "style": "caption-12",
+                  "icon": "clock"
+                }
+              ]
+            },
+            {
+              "type": "title",
+              "content": "Blog Post Title",
+              "style": "h5-20",
+              "color": "neutral-900"
+            },
+            {
+              "type": "excerpt",
+              "content": "Brief excerpt or summary of the blog post content",
+              "style": "body-14",
+              "color": "neutral-600"
+            },
+            {
+              "type": "footer",
+              "items": [
+                {
+                  "type": "date",
+                  "content": "Date",
+                  "style": "caption-12",
+                  "icon": "calendar"
+                },
+                {
+                  "type": "cta",
+                  "label": "Read More",
+                  "variant": "outline",
+                  "size": "sm"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmp-footer-01",
+      "name": "Footer (Global)",
+      "type": "footer",
+      "styles": {
+        "bgColor": "neutral-900",
+        "color": "white",
+        "padding": {
+          "top": 64,
+          "bottom": 32
+        }
+      },
+      "layers": [
+        {
+          "type": "brand-section",
+          "content": {
+            "logo": "AVENTEK",
+            "tagline": "Pioneering Industrial Innovation Since 1994",
+            "description": "Leading provider of automation, IoT, and smart security solutions"
+          }
+        },
+        {
+          "type": "links-section",
+          "columns": [
+            {
+              "title": "Company",
+              "links": [
+                "About Us",
+                "Leadership Team",
+                "Careers",
+                "Contact"
+              ]
+            },
+            {
+              "title": "Solutions",
+              "links": [
+                "Auto People Counting",
+                "PumpGuru",
+                "IoT & AI Solutions",
+                "Interface Relay Boards"
+              ]
+            },
+            {
+              "title": "Industries",
+              "links": [
+                "Retail & Hospitality",
+                "Manufacturing",
+                "Infrastructure",
+                "Healthcare"
+              ]
+            },
+            {
+              "title": "Resources",
+              "links": [
+                "Blog",
+                "Case Studies",
+                "Documentation",
+                "Support"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "contact-section",
+          "items": [
+            {
+              "icon": "map-pin",
+              "content": "Mumbai, Maharashtra, India"
+            },
+            {
+              "icon": "phone",
+              "content": "+91 9769113545"
+            },
+            {
+              "icon": "mail",
+              "content": "info@aventek.in"
+            }
+          ]
+        },
+        {
+          "type": "social-links",
+          "platforms": [
+            "LinkedIn",
+            "Twitter",
+            "Facebook"
+          ]
+        },
+        {
+          "type": "bottom-bar",
+          "content": {
+            "copyright": "© 2026 Aventek. All rights reserved.",
+            "links": [
+              "Privacy Policy",
+              "Terms of Service",
+              "Cookie Policy"
+            ]
+          }
+        }
+      ],
+      "notes": "Four-column layout on desktop, stacked on mobile; includes newsletter signup"
+    },
+    {
+      "id": "cmp-cta-banner-01",
+      "name": "Call-to-Action Banner",
+      "type": "cta-banner",
+      "styles": {
+        "bgGradient": "linear-gradient(135deg, #1E3A8A 0%, #3B82F6 100%)",
+        "padding": {
+          "top": 64,
+          "bottom": 64
+        },
+        "textAlign": "center"
+      },
+      "layers": [
+        {
+          "type": "title",
+          "content": "Ready to Transform Your Operations?",
+          "style": "h2-36",
+          "color": "white"
+        },
+        {
+          "type": "description",
+          "content": "Connect with our experts to discuss your automation and IoT needs",
+          "style": "body-lg-20",
+          "color": "neutral-100"
+        },
+        {
+          "type": "cta-group",
+          "buttons": [
+            {
+              "label": "Schedule a Consultation",
+              "bgColor": "white",
+              "textColor": "primary",
+              "size": "lg"
+            },
+            {
+              "label": "View Solutions",
+              "variant": "outline",
+              "borderColor": "white",
+              "textColor": "white",
+              "size": "lg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cmp-industry-icon-card-01",
+      "name": "Industry Icon Card",
+      "type": "icon-card",
+      "styles": {
+        "bgColor": "white",
+        "padding": {
+          "all": 32
+        },
+        "radius": "lg",
+        "elevation": "sm",
+        "textAlign": "center"
+      },
+      "layers": [
+        {
+          "type": "icon-container",
+          "bgColor": "accent-light-blue",
+          "size": 80,
+          "shape": "circle",
+          "iconSize": 40,
+          "iconColor": "white"
+        },
+        {
+          "type": "title",
+          "content": "Industry Name",
+          "style": "h5-20",
+          "color": "neutral-900"
+        },
+        {
+          "type": "description",
+          "content": "Brief description of solutions for this industry",
+          "style": "body-14",
+          "color": "neutral-600"
+        }
+      ]
+    }
+  ],
+  "textLayers": {
+    "homepage": {
+      "hero": {
+        "title": "Pioneering Industrial Innovation Since 1994",
+        "subtitle": "Transforming industries with cutting-edge automation, IoT, and smart security solutions",
+        "cta1": "Explore Solutions",
+        "cta2": "Contact Us"
+      },
+      "about": {
+        "heading": "About Aventek",
+        "title": "30+ Years of Technology Excellence",
+        "body": "Aventek has been at the forefront of industrial automation and IoT innovation since 1994. We specialize in developing intelligent solutions that enhance operational efficiency, security, and sustainability across multiple industries."
+      },
+      "stats": {
+        "stat1": {
+          "value": "30+",
+          "label": "Years of Excellence"
+        },
+        "stat2": {
+          "value": "100+",
+          "label": "OEM Partners"
+        },
+        "stat3": {
+          "value": "10+",
+          "label": "Industries Served"
+        },
+        "stat4": {
+          "value": "1000+",
+          "label": "Projects Completed"
+        }
+      }
+    },
+    "solutions": {
+      "auto-people-counting": {
+        "title": "Auto People Counting Solution",
+        "subtitle": "AI-Powered Analytics Platform",
+        "description": "India's First AI-Powered People Counting Platform - Experience revolutionary crowd analytics and intelligent space utilization with real-time WAIT indicators and multi-screen displays.",
+        "features": [
+          "First Ever Platform Developed in India",
+          "Real-time WAIT indicators & multi-screen displays",
+          "Advanced computer vision technology",
+          "Smart queue management & analytics"
+        ],
+        "cta": "Visit Product Website"
+      },
+      "pumpguru": {
+        "title": "PumpGuru",
+        "subtitle": "Intelligent Water Distribution System",
+        "description": "Revolutionary water management solution that optimizes distribution, prevents wastage, and ensures efficient delivery across residential and commercial properties.",
+        "features": [
+          "Smart water distribution control",
+          "Real-time monitoring & analytics",
+          "Automated fault detection",
+          "Mobile app integration"
+        ]
+      },
+      "iot-ai-solutions": {
+        "title": "IoT & AI Solutions",
+        "subtitle": "Connected Intelligence for Modern Industries",
+        "description": "Comprehensive IoT and AI-powered solutions designed to transform traditional operations into smart, connected, and data-driven systems.",
+        "categories": [
+          "Smart Manufacturing",
+          "Predictive Maintenance",
+          "Energy Management",
+          "Asset Tracking"
+        ]
+      }
+    },
+    "about": {
+      "mission": {
+        "title": "Our Mission",
+        "body": "To empower industries with innovative automation and IoT solutions that drive efficiency, sustainability, and growth."
+      },
+      "vision": {
+        "title": "Our Vision",
+        "body": "To be India's most trusted partner in industrial automation and smart technology, setting global standards for innovation and excellence."
+      },
+      "values": [
+        {
+          "title": "Innovation",
+          "description": "Continuously pushing boundaries with cutting-edge technology"
+        },
+        {
+          "title": "Excellence",
+          "description": "Delivering superior quality in every solution"
+        },
+        {
+          "title": "Integrity",
+          "description": "Building trust through transparency and ethical practices"
+        },
+        {
+          "title": "Customer Focus",
+          "description": "Putting client success at the heart of everything we do"
+        }
+      ],
+      "leadership": [
+        {
+          "name": "Jay Trivedi",
+          "title": "Director",
+          "bio": "Visionary leader driving Aventek's strategic growth and innovation initiatives"
+        },
+        {
+          "name": "Milind Trivedi",
+          "title": "Director",
+          "bio": "Technical expert leading product development and R&D excellence"
+        }
+      ]
+    },
+    "industries": [
+      {
+        "name": "Retail & Hospitality",
+        "description": "Smart solutions for customer analytics, queue management, and operational efficiency"
+      },
+      {
+        "name": "Manufacturing",
+        "description": "Automation systems for production optimization and quality control"
+      },
+      {
+        "name": "Infrastructure & Real Estate",
+        "description": "IoT solutions for building management and smart facilities"
+      },
+      {
+        "name": "Healthcare",
+        "description": "Patient flow management and facility monitoring systems"
+      },
+      {
+        "name": "Transportation",
+        "description": "Crowd analytics and safety management for transit hubs"
+      },
+      {
+        "name": "Education",
+        "description": "Campus security and attendance tracking solutions"
+      }
+    ],
+    "contact": {
+      "title": "Get in Touch",
+      "subtitle": "Let's discuss how we can help transform your operations",
+      "address": "Mumbai, Maharashtra, India",
+      "phone": "+91 9769113545",
+      "email": "info@aventek.in",
+      "form": {
+        "fields": [
+          "Full Name",
+          "Company Name",
+          "Email",
+          "Phone",
+          "Industry",
+          "Message"
+        ],
+        "submit": "Send Message"
+      }
+    }
+  },
+  "designGuidance": {
+    "colorUsage": {
+      "primary": "Use for main CTAs, headings, and brand elements",
+      "secondary": "Use for secondary actions and highlights",
+      "neutral": "Use for body text, borders, and backgrounds",
+      "gradients": "Combine primary and secondary blues for hero sections and CTAs"
+    },
+    "typography": {
+      "headings": "Use bold weights (600-700) for all headings",
+      "body": "Use regular weight (400) for body text",
+      "spacing": "Maintain consistent line-height ratios for readability"
+    },
+    "spacing": {
+      "sections": "Use 4xl-6xl spacing between major sections",
+      "elements": "Use md-xl spacing between related elements",
+      "components": "Use sm-md internal padding for cards and containers"
+    },
+    "imagery": {
+      "hero": "Use high-quality industrial/technology imagery",
+      "products": "Showcase products with clean backgrounds and proper lighting",
+      "team": "Professional headshots with consistent backgrounds",
+      "blog": "Relevant stock imagery matching article topics"
+    }
+  },
+  "exportGuidance": {
+    "images": {
+      "format": "Export as WebP/AVIF for optimal performance",
+      "sizes": "Provide 1x, 2x, and 3x versions for responsive images",
+      "optimization": "Compress images while maintaining quality (80-85% quality)"
+    },
+    "icons": {
+      "format": "Export as SVG with viewBox attribute",
+      "style": "Use mono-color fills with tokenized color references",
+      "size": "Create at 24x24 base size for consistent scaling"
+    },
+    "tokens": {
+      "handoff": "Provide token JSON to developers",
+      "css-variables": "Map to CSS custom properties (e.g., --color-primary: #1E3A8A)",
+      "naming": "Use consistent BEM-style naming conventions"
+    },
+    "animations": {
+      "duration": "Use 200-400ms for micro-interactions",
+      "easing": "Apply ease-out cubic for natural motion",
+      "triggers": "Document hover, focus, and scroll-triggered animations"
+    },
+    "responsive": {
+      "breakpoints": {
+        "mobile": 320,
+        "tablet": 768,
+        "desktop": 1024,
+        "wide": 1440
+      },
+      "strategy": "Mobile-first approach with progressive enhancement"
+    }
+  },
+  "componentLibrary": {
+    "buttons": {
+      "variants": [
+        {
+          "name": "Primary",
+          "bgColor": "primary",
+          "textColor": "white",
+          "hover": "primary-dark"
+        },
+        {
+          "name": "Secondary",
+          "bgColor": "secondary",
+          "textColor": "white",
+          "hover": "primary-light"
+        },
+        {
+          "name": "Outline",
+          "bgColor": "transparent",
+          "borderColor": "primary",
+          "textColor": "primary",
+          "hover": "primary with white text"
+        },
+        {
+          "name": "Ghost",
+          "bgColor": "transparent",
+          "textColor": "neutral-700",
+          "hover": "neutral-100"
+        }
+      ],
+      "sizes": [
+        {
+          "name": "sm",
+          "padding": "8px 16px",
+          "fontSize": 14
+        },
+        {
+          "name": "md",
+          "padding": "12px 24px",
+          "fontSize": 16
+        },
+        {
+          "name": "lg",
+          "padding": "16px 32px",
+          "fontSize": 18
+        }
+      ]
+    },
+    "cards": {
+      "variants": [
+        {
+          "name": "Default",
+          "bgColor": "white",
+          "elevation": "md",
+          "radius": "lg"
+        },
+        {
+          "name": "Elevated",
+          "bgColor": "white",
+          "elevation": "xl",
+          "radius": "xl"
+        },
+        {
+          "name": "Flat",
+          "bgColor": "neutral-50",
+          "elevation": "none",
+          "radius": "md"
+        }
+      ]
+    },
+    "badges": {
+      "variants": [
+        {
+          "name": "Primary",
+          "bgColor": "primary",
+          "textColor": "white"
+        },
+        {
+          "name": "Secondary",
+          "bgColor": "neutral-200",
+          "textColor": "neutral-700"
+        },
+        {
+          "name": "Success",
+          "bgColor": "success",
+          "textColor": "white"
+        },
+        {
+          "name": "Outline",
+          "bgColor": "transparent",
+          "borderColor": "neutral-300",
+          "textColor": "neutral-700"
+        }
+      ]
+    }
+  },
+  "notes": "This JSON provides a comprehensive design system for the Aventek corporate website. Import this into Figma using a JSON-to-components plugin, or use it as a reference for creating design tokens and components manually. All colors align with Aventek's blue, light blue, black, and grey brand palette. Typography uses Inter font family for modern, professional appearance. Components are designed mobile-first with responsive considerations built in."
+}

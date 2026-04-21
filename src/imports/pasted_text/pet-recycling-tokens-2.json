@@ -1,0 +1,215 @@
+{
+  "meta": {
+    "project": "PET Bottle Recycling — Blog & Components",
+    "description": "Figma-import JSON with design tokens, core components, and text layers for the PET bottle recycling blog and case study. Import via a Figma JSON-to-components plugin or use as a token + content source for creating components.",
+    "version": "1.0",
+    "author": "AI Assistant"
+  },
+  "tokens": {
+    "colors": {
+      "primary": "#0B6E4F",
+      "accent": "#FFD166",
+      "neutral-900": "#0B1220",
+      "neutral-700": "#394047",
+      "neutral-500": "#6B7280",
+      "neutral-100": "#F3F4F6",
+      "success": "#16A34A",
+      "danger": "#EF4444"
+    },
+    "typography": {
+      "display-32": { "fontFamily": "Inter, system-ui", "fontWeight": 700, "fontSize": 32, "lineHeight": 40 },
+      "h1-28": { "fontFamily": "Inter, system-ui", "fontWeight": 700, "fontSize": 28, "lineHeight": 36 },
+      "h2-20": { "fontFamily": "Inter, system-ui", "fontWeight": 600, "fontSize": 20, "lineHeight": 28 },
+      "body-16": { "fontFamily": "Inter, system-ui", "fontWeight": 400, "fontSize": 16, "lineHeight": 24 },
+      "caption-12": { "fontFamily": "Inter, system-ui", "fontWeight": 400, "fontSize": 12, "lineHeight": 16 }
+    },
+    "spacing": { "xs": 4, "sm": 8, "md": 16, "lg": 24, "xl": 40 },
+    "radius": { "sm": 6, "md": 8, "lg": 12 }
+  },
+  "components": [
+    {
+      "id": "cmp-header-01",
+      "name": "Header / Nav (desktop + mobile)",
+      "type": "header",
+      "styles": {
+        "background": "transparent",
+        "height": 72,
+        "padding": { "left": 24, "right": 24 }
+      },
+      "layers": [
+        { "type": "logo", "content": "Aventek", "style": "h2-20", "color": "primary" },
+        { "type": "nav", "items": ["Home", "Solutions", "Industries", "Case Studies", "Resources", "Contact"], "style": "body-16", "color": "neutral-700" },
+        { "type": "cta", "label": "Get a Quote", "style": "body-16", "bgColor": "primary", "textColor": "#FFFFFF", "radius": "md" }
+      ],
+      "notes": "Hamburger menu for mobile; sticky header with single primary CTA"
+    },
+    {
+      "id": "cmp-hero-01",
+      "name": "Hero — Blog Landing",
+      "type": "hero",
+      "styles": {
+        "bgColor": "neutral-100",
+        "padding": { "top": 48, "bottom": 48 },
+        "align": "left"
+      },
+      "layers": [
+        { "id": "hero-kicker", "type": "text", "content": "FEATURED ARTICLE", "style": "caption-12", "color": "neutral-700" },
+        { "id": "hero-title", "type": "text", "content": "The Real Danger of PET Bottle Waste — and How Collective Action Can Secure a Sustainable Future", "style": "display-32", "color": "neutral-900" },
+        { "id": "hero-sub", "type": "text", "content": "Global facts, a Norway case study, and an actionable roadmap for industry, government, and communities.", "style": "body-16", "color": "neutral-700" },
+        { "id": "hero-cta-primary", "type": "button", "content": "Read the full story", "style": "body-16", "bgColor": "primary", "textColor": "#FFFFFF", "radius": "lg" },
+        { "id": "hero-cta-secondary", "type": "button", "content": "Download one-pager", "style": "body-16", "bgColor": "accent", "textColor": "neutral-900", "radius": "lg" }
+      ],
+      "notes": "Place client logos or social proof strip under CTAs; light hero image to the right on wide screens"
+    },
+    {
+      "id": "cmp-article-01",
+      "name": "Article Layout — Blog Post",
+      "type": "article",
+      "styles": { "maxWidth": 840, "padding": { "left": 24, "right": 24 } },
+      "layers": [
+        { "id": "meta", "type": "text", "content": "By AVENTEK — March 16, 2026 — Sustainability", "style": "caption-12", "color": "neutral-500" },
+        { "id": "title", "type": "text", "content": "The Real Danger of PET Bottle Waste — Global Facts and a Roadmap for Collective Action", "style": "h1-28", "color": "neutral-900" },
+        { "id": "lead", "type": "text", "content": "PET bottles are convenient, but their lifecycle and mismanagement place a burden on ecosystems and future generations. This article outlines global statistics, a successful case study, and an actionable plan to turn PET into a circular resource.", "style": "body-16", "color": "neutral-700" },
+        {
+          "id": "section-problem",
+          "type": "section",
+          "title": "Why PET bottle waste is a growing problem",
+          "titleStyle": "h2-20",
+          "content": [
+            "Volume and persistence: PET production and disposal rates have surged globally; much ends up in landfills or the environment.",
+            "Microplastics and ecosystem contamination: Broken fragments enter food chains with unknown long-term health impacts.",
+            "Resource intensity: Virgin PET production relies on fossil fuels and contributes to emissions."
+          ],
+          "textStyle": "body-16"
+        },
+        {
+          "id": "section-stats",
+          "type": "section",
+          "title": "Global statistics (select)",
+          "titleStyle": "h2-20",
+          "content": [
+            "Global plastic production: ~367 million metric tonnes in 2020. (PlasticsEurope, 2021) — https://www.plasticseurope.org/en/resources/publications/4312-plastics-the-facts-2021",
+            "Only ~9% of plastic ever produced has been recycled; ~79% has accumulated in landfills or nature. (Geyer et al., 2017 / Our World in Data) — https://ourworldindata.org/plastic-pollution",
+            "Annual leakage to oceans: ~8–12 million tonnes per year. (Jambeck et al., 2015) — https://www.unep.org/resources/report/no-way-out",
+            "High litter prevalence: PET bottles are consistently among top items in global cleanups. (Break Free From Plastic) — https://www.breakfreefromplastic.org/globalbrandaudit/"
+          ],
+          "textStyle": "body-16"
+        },
+        {
+          "id": "section-case",
+          "type": "case-study",
+          "title": "Case Study — Norway Deposit Return Scheme (Infinitum)",
+          "titleStyle": "h2-20",
+          "content": [
+            "Summary: Norway’s nationwide deposit-return system captures 90–97% of single-use beverage containers by providing a small purchase deposit refunded on return. (Infinitum)",
+            "Key outcomes: High capture rates, low contamination, consistent high-quality rPET feedstock for recyclers.",
+            "Why it works: Consumer incentive, extensive return infrastructure (retailer machines), centralized processing, and strong industry-government collaboration.",
+            "Sources: https://www.infinitum.no/en/infinitum/about-infinitum, OECD DRS overview — https://www.oecd.org/environment/waste/high-performing-deposit-refund-systems.pdf"
+          ],
+          "textStyle": "body-16",
+          "callouts": [
+            { "label": "Return rate", "value": "90–97%" },
+            { "label": "Impact", "value": "High-quality rPET, reduced litter" }
+          ]
+        },
+        {
+          "id": "section-roadmap",
+          "type": "section",
+          "title": "A collective roadmap",
+          "titleStyle": "h2-20",
+          "content": [
+            "Design for circularity: mono-material bottles, recyclable caps, and refillable systems where practical.",
+            "Collection & incentives: deposit-return schemes, curbside consistency, and integrating informal collectors.",
+            "Recycling & technology: improved mechanical recycling, targeted chemical recycling, and scaling local reprocessing.",
+            "Policy & markets: EPR, recycled-content mandates, and incentives for rPET demand.",
+            "Behavior change: consumer education, school programs, and reward-based return apps.",
+            "Digital tools & traceability: QR/product passports to track materials and improve sorting."
+          ],
+          "textStyle": "body-16"
+        },
+        {
+          "id": "section-measure",
+          "type": "section",
+          "title": "Measuring progress",
+          "titleStyle": "h2-20",
+          "content": [
+            "Capture rate (% returned vs. produced), recycled-content share in new bottles, litter indexes, and lifecycle greenhouse-gas metrics."
+          ],
+          "textStyle": "body-16"
+        },
+        { "id": "conclusion", "type": "text", "content": "PET bottle pollution is a solvable systems problem. Collective action from governments, industry, communities, and innovators can convert waste into a circular resource for future generations.", "style": "body-16", "color": "neutral-700" },
+        { "id": "cta-article", "type": "button", "content": "Download infographic (PDF)", "style": "body-16", "bgColor": "accent", "textColor": "neutral-900", "radius": "md" }
+      ],
+      "notes": "Use side bar for related posts, case study filter, and resource download links"
+    },
+    {
+      "id": "cmp-card-01",
+      "name": "Stat / Metric Card",
+      "type": "card",
+      "styles": { "bgColor": "#FFFFFF", "padding": { "all": 16 }, "radius": "md", "elevation": 2 },
+      "layers": [
+        { "type": "stat", "content": "90–97%", "style": "h2-20", "color": "primary" },
+        { "type": "label", "content": "Return rate — Norway (Infinitum)", "style": "body-16", "color": "neutral-700" }
+      ]
+    },
+    {
+      "id": "cmp-footer-01",
+      "name": "Footer (global)",
+      "type": "footer",
+      "styles": { "bgColor": "neutral-900", "color": "#FFFFFF", "padding": { "top": 32, "bottom": 32 } },
+      "layers": [
+        { "type": "brand", "content": "Aventek — Sustainable Solutions", "style": "body-16", "color": "#FFFFFF" },
+        { "type": "links", "items": ["About", "Solutions", "Case Studies", "Resources", "Privacy"], "style": "caption-12", "color": "#E5E7EB" },
+        { "type": "copyright", "content": "© 2026 Aventek. All rights reserved.", "style": "caption-12", "color": "#9CA3AF" }
+      ],
+      "notes": "Include newsletter signup and social links in expanded footer"
+    },
+    {
+      "id": "cmp-aside-01",
+      "name": "Sidebar — Related Resources",
+      "type": "sidebar",
+      "styles": { "width": 300, "padding": { "all": 16 } },
+      "layers": [
+        { "type": "search", "placeholder": "Search resources..." },
+        { "type": "related", "items": ["Case Study: Circular PET in Germany", "Guide: Running a DRS", "Infographic: PET lifecycle"] }
+      ]
+    }
+  ],
+  "textLayers": {
+    "blog-full": {
+      "title": "The Real Danger of PET Bottle Waste — Global Facts and a Roadmap for Collective Action",
+      "meta": "By AVENTEK — 03/16/2026 — Sustainability",
+      "lead": "PET bottles are convenient, but their lifecycle and mismanagement place a heavy burden on ecosystems and future generations. This article presents key global statistics, a case study of Norway’s DRS success, and a collective roadmap for turning PET into a circular resource.",
+      "sections": [
+        {
+          "heading": "Why PET bottle waste is a growing problem",
+          "body": "PET production and disposal rates have surged globally. While PET is recyclable in principle, low collection rates and contamination mean much ends up in landfills or the environment. When PET degrades it forms microplastics that enter soils and waterways, with potential long-term health and ecological impacts. Producing virgin PET depends on fossil feedstocks, contributing to greenhouse gas emissions."
+        },
+        {
+          "heading": "Global statistics (select)",
+          "body": "• Global plastic production: ~367 million metric tonnes in 2020. (PlasticsEurope, 2021) — https://www.plasticseurope.org/en/resources/publications/4312-plastics-the-facts-2021\n\n• Only ~9% of plastic ever produced has been recycled; ~79% has accumulated in landfills or nature. (Geyer et al., 2017 / Our World in Data) — https://ourworldindata.org/plastic-pollution\n\n• Annual leakage to oceans: ~8–12 million tonnes per year. (Jambeck et al., 2015) — https://www.unep.org/resources/report/no-way-out\n\n• High litter prevalence: PET bottles are among top items found in global cleanups. (Break Free From Plastic) — https://www.breakfreefromplastic.org/globalbrandaudit/"
+        },
+        {
+          "heading": "Case Study — Norway Deposit Return Scheme (Infinitum)",
+          "body": "Norway operates a nationwide deposit-return scheme that refunds a small deposit when consumers return PET bottles and cans. This system achieves return rates typically between 90–97%, producing high-quality rPET and drastically reducing litter. The program succeeds due to clear financial incentive, accessible return points (retail and reverse vending machines), centralized processing, and collaboration across government, industry, and civil society. Sources: https://www.infinitum.no/en/infinitum/about-infinitum; OECD overview — https://www.oecd.org/environment/waste/high-performing-deposit-refund-systems.pdf"
+        },
+        {
+          "heading": "A collective roadmap",
+          "body": "Design for circularity (mono-materials, refillable systems), implement strong collection incentives (DRS, curbside consistency), upgrade recycling tech (optical sorting, washing, chemical recycling where appropriate), enforce policy levers (EPR, recycled-content mandates), and run sustained behavior-change campaigns (education, reward apps). Digital traceability (QR codes/product passports) and inclusive policies for informal workers complete the system."
+        },
+        {
+          "heading": "Measuring progress",
+          "body": "Important KPIs include capture rates (percent returned), recycled content in new bottles (rPET share), litter and microplastic indices, and lifecycle emissions reductions."
+        }
+      ],
+      "conclusion": "PET bottle pollution is not inevitable. When producers, governments, communities, and innovators align on design, policy, technology, and behavior, PET can become a circular resource. Collective action now will protect future generations."
+    }
+  },
+  "exportGuidance": {
+    "images": "Export hero and article images as WebP/AVIF. Provide 1x/2x/3x sizes.",
+    "icons": "Export as SVG. Keep icons mono-color with tokenized color fills.",
+    "tokensHandoff": "Provide token JSON to devs; include mapping to CSS variables (e.g., --color-primary).",
+    "animations": "Annotate micro-interactions with duration (80–300ms) and easing (ease-out cubic)."
+  },
+  "notes": "To import: use a Figma plugin that accepts JSON tokens/components or paste content into a new file and create components per the structure. This JSON provides copy + component scaffolding; designers should create Figma frames and convert layers into components using these tokens and text strings."
+}
